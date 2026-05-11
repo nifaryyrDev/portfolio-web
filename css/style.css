@@ -1,0 +1,489 @@
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* =========================
+   RESET
+========================= */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+header{
+  width: 100%;
+  padding: 25px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+/* LOGO */
+
+.logo{
+  font-size: 32px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* NAVIGATION */
+
+nav a{
+  text-decoration: none;
+  color: #333;
+  margin-left: 30px;
+  font-size: 17px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover{
+  color: #f4b400;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 120px 10% 80px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   HERO IMAGE
+========================= */
+
+.hero-image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* PROFILE IMAGE */
+
+.hero-image img{
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid white;
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.12),
+  0 0 25px rgba(244,180,0,0.15);
+  transition: 0.4s;
+}
+
+.hero-image img:hover{
+  transform: scale(1.05);
+}
+
+/* =========================
+   HERO TEXT
+========================= */
+
+.hero-text{
+  max-width: 560px;
+}
+
+/* SMALL TITLE */
+
+.hero-text h4{
+  font-size: 20px;
+  color: #777;
+  margin-bottom: 15px;
+}
+
+/* MAIN TITLE */
+
+.hero-text h1{
+  font-size: 52px;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+/* NAME COLOR */
+
+.name{
+  color: #f4b400;
+}
+
+/* SUBTITLE */
+
+.hero-text h3{
+  font-size: 30px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.5;
+}
+
+/* DESCRIPTION */
+
+.hero-text p{
+  font-size: 16px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons{
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+/* BUTTON */
+
+.btn{
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.4s;
+}
+
+.btn:hover{
+  transform: translateY(-10px);
+}
+
+/* BUTTON COLORS */
+
+.yellow{
+  background: #f4b400;
+}
+
+.green{
+  background: #34a853;
+}
+
+.blue{
+  background: #4285f4;
+}
+
+/* =========================
+   ABOUT SHORT
+========================= */
+
+.about-short{
+  width: 100%;
+  padding: 80px 10%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* BOX */
+
+.box{
+  width: 320px;
+  background: white;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.07);
+  transition: 0.4s;
+}
+
+.box:hover{
+  transform: translateY(-10px);
+}
+
+/* BOX TITLE */
+
+.box h2{
+  color: #f4b400;
+  margin-bottom: 18px;
+  font-size: 26px;
+}
+
+/* BOX TEXT */
+
+.box p{
+  color: #555;
+  line-height: 1.8;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.page{
+  padding: 100px 10%;
+}
+
+/* ABOUT TITLE */
+
+.page h1{
+  font-size: 50px;
+  margin-bottom: 25px;
+  color: #111;
+}
+
+/* ABOUT TEXT */
+
+.page p{
+  line-height: 1.9;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* =========================
+   SKILLS
+========================= */
+
+.skills{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 35px;
+}
+
+/* SKILL CARD */
+
+.card{
+  width: 220px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+/* SKILL TITLE */
+
+.card h3{
+  color: #f4b400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* SKILL TEXT */
+
+.card p{
+  font-size: 15px;
+  color: #666;
+}
+
+/* =========================
+   CERTIFICATE
+========================= */
+
+.sertifikat-title{
+  margin-top: 70px;
+  margin-bottom: 30px;
+}
+
+/* CERTIFICATE CONTAINER */
+
+.sertifikat{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* CERTIFICATE IMAGE */
+
+.sertifikat img{
+  width: 450px; /* Ukuran sudah diubah menjadi sedang (dari 700px) */
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: 0.4s;
+}
+
+.sertifikat img:hover{
+  transform: scale(1.02);
+}
+
+/* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-container{
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* CONTACT CARD */
+
+.contact-card{
+  width: 260px;
+  background: white;
+  padding: 35px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.contact-card:hover{
+  transform: translateY(-10px);
+}
+
+/* CONTACT TITLE */
+
+.contact-card h2{
+  color: #f4b400;
+  margin-bottom: 15px;
+}
+
+/* CONTACT TEXT */
+
+.contact-card p{
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+  background: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: 50px;
+}
+
+/* FOOTER TITLE */
+
+footer h3{
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+/* FOOTER TEXT */
+
+footer p{
+  color: #666;
+}
+
+/* =========================
+   SMOOTH SCROLL
+========================= */
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 768px){
+
+  /* NAVBAR */
+  header{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  nav{
+    display: flex;
+    gap: 18px;
+  }
+
+  nav a{
+    margin-left: 0;
+  }
+
+  /* HERO */
+  .hero{
+    text-align: center;
+    gap: 50px;
+    padding-top: 140px;
+  }
+
+  /* IMAGE */
+  .hero-image img{
+    width: 250px;
+    height: 250px;
+  }
+
+  /* TITLE */
+  .hero-text h1{
+    font-size: 38px;
+  }
+
+  /* SUBTITLE */
+  .hero-text h3{
+    font-size: 22px;
+  }
+
+  /* TEXT */
+  .hero-text p{
+    font-size: 15px;
+  }
+
+  /* BUTTON */
+  .btn{
+    width: 85px;
+    height: 85px;
+    font-size: 12px;
+  }
+
+  /* BUTTON POSITION */
+  .buttons{
+    justify-content: center;
+  }
+
+  /* CERTIFICATE */
+  .sertifikat img{
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
