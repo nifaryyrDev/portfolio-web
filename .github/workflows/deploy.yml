@@ -1,7 +1,7 @@
 name: Deploy Website
 
 on:
-  push:
+ push:
     branches:
       - main
 
@@ -12,6 +12,9 @@ permissions:
 
 jobs:
   deploy:
+    environment:
+      name: github-pages
+
     runs-on: ubuntu-latest
 
     steps:
